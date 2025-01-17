@@ -144,6 +144,37 @@ a {
     cursor: pointer;
 }
 
+/****** Filters ***********/
+.filters-container {
+    margin-top: 17px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+    margin-bottom: 10;
+}
+
+.filter {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: inherit;
+    font-size: 15px;
+    border-radius: 25px;
+    border: 2px solid rgb(217, 217, 217);
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.filter i{
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.filter:hover {
+    background-color: var(--filter-bg-color);
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
