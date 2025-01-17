@@ -15,6 +15,7 @@
     color: var(--main-color);
 }
 
+/****** Header ***********/
 header{
     display: flex;
     align-items: end;
@@ -47,6 +48,7 @@ header li:hover{
     cursor: pointer;
 }
 
+/*****************/
 body {
     display: flex;
     justify-content: center;
@@ -333,6 +335,29 @@ a {
 
 .activites .card .card-title{
     margin: 15px 0 0 15px;
+}
+
+/****** Footer ***********/
+footer{
+    display: flex;
+    background-color: var(--main-bg-color);
+    padding: 20px 20px 30px 20px;
+    margin-top: 60px;
+}
+
+footer .rubrique{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
 }
 
 
