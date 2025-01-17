@@ -13,6 +13,46 @@
     color: var(--main-color);
 }
 
+html, body { /* RESET SPACES */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: end;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+header img{
+    height: 19px;
+    max-height: 100%;
+}
+
+header ul{
+    margin: 0;
+    width: 100%;
+    justify-content: end;
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    margin-left: 70px;
+    padding-top: 10px;
+    border-top: 2px solid transparent;
+}
+
+header li:hover{
+    border-top: 2px solid var(--main-color);
+    color: var(--main-color);
+    cursor: pointer;
+}
+
 body {
     display: flex;
     justify-content: center;
