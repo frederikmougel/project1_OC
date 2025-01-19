@@ -144,7 +144,6 @@ a {
     border-width: 1px 0;
     border-style: solid;
     border-color: var(--main-bg-color);
-    width: 50;    
     padding: 0 20px;
 }
 
@@ -163,7 +162,6 @@ a {
     display: flex;
     justify-content: space-between;
     gap: 10px; 
-    margin-bottom: 10;
 }
 
 .filters .result{
@@ -379,14 +377,17 @@ footer ul{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    /****** Hebergements And Populaires ***********/
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
+    /****** Hebergements ***********/
     .hebergements {
         width: 100%;
     }
 
+    /****** Populaires ***********/
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -410,6 +411,7 @@ footer ul{
         font-size: 13px;
     }
 
+    /****** Activites ***********/
     .activites .card img{
         width: 100%;
         height: 27vh;
@@ -418,6 +420,11 @@ footer ul{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .main-container{
+        padding: 0;
+    }
+    
+    /****** Header ***********/
     header{
         display: flex;
         align-items: center;
@@ -445,10 +452,7 @@ footer ul{
         border-bottom: 2px solid var(--main-color);
     }
 
-    .main-container{
-        padding: 0;
-    }
-
+    /****** Search ***********/
     .search, .filters{
         padding: 0 25px;
     }
@@ -477,24 +481,24 @@ footer ul{
         display: none;
     }
 
+    /****** Filters ***********/
     .filters-container {
         width: 100%;
-        margin-top: 17px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 10;
     }
 
     .filter{
         text-align: left;
     }
 
+    /****** Hebergements And Populaires ***********/
     .hebergements:first-child {
-        order: 2; /* L'élément de gauche passe en bas par défaut */
+        order: 2;
     }
       
     .populaires:last-child {
-        order: 1; /* L'élément de droite passe en haut */
+        order: 1;
     }
 
     .hebergements-and-populaires section {
@@ -507,6 +511,7 @@ footer ul{
         box-sizing: border-box;
     }
 
+    /****** Populaires ***********/
     .populaires{
         margin: 0;
     }
@@ -523,6 +528,7 @@ footer ul{
         margin-top: 15px;
     }
     
+    /****** Hebergements ***********/
     .hebergements-cards{
         display: flex;
         flex-direction: column;
@@ -541,6 +547,7 @@ footer ul{
         margin-top: 15px;
     }
 
+    /****** Activites ***********/
     .activites {
         padding: 0 25px;
         box-sizing: border-box;
@@ -572,6 +579,7 @@ footer ul{
         border-radius: 20px 20px 0 0;
     }
 
+    /****** Footer ***********/
     footer{
         display: flex;
         flex-direction: column;
