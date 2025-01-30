@@ -57,12 +57,14 @@ header li:hover{
 body {
     display: flex;
     justify-content: center;
+    max-width: 1440px;
+    min-width: 330px;
+    margin: 0 auto;
 }
 
 .main-container {
     width: 100%;
     min-width: fit-content;
-    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
 }
